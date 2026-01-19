@@ -1,0 +1,7 @@
+{
+  "name": "HealthRisk AI Profiler",
+  "description": "A high-performance health risk assessment tool using a 4-step processing pipeline: Parsing, Extraction, Scoring, and AI-driven Recommendations.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
