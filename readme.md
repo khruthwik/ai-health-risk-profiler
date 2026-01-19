@@ -6,7 +6,15 @@ A deterministic, auditable health-risk analysis system augmented with Large Lang
 
 ---
 
-## 📋 Executive Summary
+##  Screenshots
+
+[![HealthRiskAI Interface](https://i.postimg.cc/FFdsyYMK/Screenshot-2026-01-19-233527.png)](https://postimg.cc/fksNZRT4)
+
+*Main interface showing health risk analysis and recommendations*
+
+---
+
+## Executive Summary
 
 HealthRiskAI is a client-side, AI-assisted health profiling engine designed to analyze lifestyle survey data (structured or scanned), extract meaningful health signals, compute a transparent risk score, and generate non-diagnostic, wellness-focused recommendations.
 
@@ -15,7 +23,7 @@ Unlike naïve "LLM-only" systems, HealthRiskAI implements a **hybrid architectur
 - **Rule-based pipelines** are used wherever possible for determinism, cost efficiency, and explainability
 - **LLM inference** (Google Gemini) is used only as a fallback for semantic extraction and natural-language recommendation synthesis
 
-### ✨ This design ensures:
+### This design ensures:
 
 - Predictable outputs
 - Auditable decision paths
@@ -24,7 +32,7 @@ Unlike naïve "LLM-only" systems, HealthRiskAI implements a **hybrid architectur
 
 ---
 
-## 🎯 Key Design Philosophy
+##  Key Design Philosophy
 
 ### Why Hybrid AI?
 
@@ -44,7 +52,7 @@ HealthRiskAI adopts a **Rule-First, AI-Second** strategy:
 
 ---
 
-## 🚀 Core Capabilities
+##  Core Capabilities
 
 ### 3.1 Input Modalities
 - Structured JSON (direct survey data)
@@ -70,7 +78,7 @@ HealthRiskAI adopts a **Rule-First, AI-Second** strategy:
 
 ---
 
-## 🏗️ System Architecture
+##  System Architecture
 
 ```
 ┌────────────────────┐
@@ -101,7 +109,7 @@ HealthRiskAI adopts a **Rule-First, AI-Second** strategy:
 
 ---
 
-## 🔄 Detailed Pipeline Walkthrough
+##  Detailed Pipeline Walkthrough
 
 ### Step 1: Input Acquisition
 User provides JSON or uploads a scanned health form. Images are converted to Base64 in-browser. OCR + extraction is delegated to Gemini with strict JSON schema enforcement.
@@ -164,7 +172,7 @@ Gemini is used only for:
 
 ---
 
-## 💻 Frontend Engineering Highlights
+##  Frontend Engineering Highlights
 
 - **React + TypeScript**
 - Strong type safety across services
@@ -174,7 +182,7 @@ Gemini is used only for:
 
 ---
 
-## 🔒 Security & Privacy Considerations
+##  Security & Privacy Considerations
 
 - API keys stored via `.env` only
 - `.env` excluded from version control
@@ -184,7 +192,7 @@ Gemini is used only for:
 
 ---
 
-## ⚠️ Limitations & Non-Goals
+##  Limitations & Non-Goals
 
 This project intentionally does **NOT**:
 - Diagnose diseases
@@ -199,7 +207,7 @@ This project intentionally does **NOT**:
 
 ---
 
-## 🛣️ Extensibility Roadmap
+##  Extensibility Roadmap
 
 Possible future enhancements:
 - Backend microservice for secure inference
@@ -211,7 +219,7 @@ Possible future enhancements:
 
 ---
 
-## 🛠️ Setup Instructions
+##  Setup Instructions
 
 ```bash
 # Clone the repository
